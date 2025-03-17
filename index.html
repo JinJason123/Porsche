@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Scene</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Select Background</h3>
+    <input type="radio" name="background" value="back1.jpg" checked> Track
+    <input type="radio" name="background" value="back2.jpg"> Airport
+    <input type="radio" name="background" value="back3.jpg"> City
+
+
+    <h3>Move Car</h3>
+    <input type="range" id="charPos" min="0" max="400" value="150">
+
+    <h3>Toggle Items</h3>
+    <input type="checkbox" id="item1"> Plane
+    <input type="checkbox" id="item2"> Emblem 
+    <input type="checkbox" id="item3"> Flag 
+
+    <h3>Sound Effects</h3>
+    <button onclick="playSound(1)">Cold Start</button>
+    <button onclick="playSound(2)">Launch</button>
+    <button onclick="playSound(3)">Rev</button>
+    <br> <br>
+    <canvas id="sceneCanvas" width="500" height="300"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
